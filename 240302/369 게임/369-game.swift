@@ -12,7 +12,7 @@ print(result.joined(separator: " "))
 
 func check369(_ input: Int) -> Bool {
     var num = input
-    while num > 10 {
+    while num > 0 {
         if num % 10 == 3 || num % 10 == 6 || num % 10 == 9 { 
             return true
         } else {
