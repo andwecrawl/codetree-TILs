@@ -1,4 +1,4 @@
-let input = readLine()!.map{ Int(String($0))! }
+let input = readLine()!.split(separator: " ").map{ Int(String($0))! }
 
 var result: [String] = []
 for num in 1...input[0] {
