@@ -17,7 +17,7 @@ var result: [[String]] = []
 
 for i in b1.indices {
     var arr: [String] = []
-    for j in b2.indices {
+    for j in b1[i].indices {
         let num = b1[i][j] == b2[i][j] ? 0 : 1
         arr.append("\(num)")
     }
