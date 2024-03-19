@@ -1,12 +1,12 @@
 let input = readLine()!.split(separator: " ").map { Int(String($0))! }
 
-var board: [[String]] = Array(repeating: Array(repeating: "0", count: input[0]), count: input[1])
+var board: [[String]] = []
 var strArr: [[String]] = []
 
 for i in 0..<input[1]*2 {
     let str = readLine()!.split(separator: " ").map { String($0) }
     if i < input[1] {
-        board[i] = Array(str)
+        board.append(Array(str))
     } else {
         strArr.append(Array(str))
     }
