@@ -3,9 +3,9 @@ let input = readLine()!.split(separator: " ").map { Int(String($0))! }
 var board: [[String]] = []
 var strArr: [[String]] = []
 
-for i in 0..<input[1]*2 {
+for i in 0..<input[0]*2 {
     let str = readLine()!.split(separator: " ").map { String($0) }
-    if i < input[1] {
+    if i < input[0] {
         board.append(Array(str))
     } else {
         strArr.append(Array(str))
