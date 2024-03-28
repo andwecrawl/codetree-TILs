@@ -1,3 +1,4 @@
-let input = readLine()!
+let input1 = readLine()!
+let input2 = readLine()!
 
-print(input.count)
+print(input1.count + input2.count)
