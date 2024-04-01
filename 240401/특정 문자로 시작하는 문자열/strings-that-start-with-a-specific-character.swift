@@ -10,8 +10,6 @@ for _ in 0..<n {
     arr.append(str)
 }
 let target = String(readLine()!)
-cnt /= Double(n)
-let str = String(format: "%.2f", cnt)
 
 for element in arr {
     if String(element.first!) == target {
@@ -19,5 +17,7 @@ for element in arr {
         cnt += Double(element.count)
     }
 }
+cnt /= Double(res)
+let str = String(format: "%.2f", cnt)
 
 cnt == 0 ? print("\(res) -nan") : print("\(res) \(str)")
