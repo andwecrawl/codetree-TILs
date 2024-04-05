@@ -1,2 +1,2 @@
 let input = readLine()!
-print(input+"hello")
+print(input+"Hello")
