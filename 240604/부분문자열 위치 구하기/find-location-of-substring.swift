@@ -6,7 +6,7 @@ for index in n.indices {
     stack.append(n[index])
     if stack.count == m.count {
         if stack.joined(separator: "") == m { 
-            print(m.count - index + 1)
+            print(m.count - index + m.count == n.count ? -1 : 1)
         }
         stack.removeFirst()
     }
