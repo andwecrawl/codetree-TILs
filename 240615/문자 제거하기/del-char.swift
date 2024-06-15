@@ -1,4 +1,4 @@
-let input = readLine()!
+let input = readLine() ?? ""
 var str = input.map { String($0) }
 
 while str.count > 1 {
